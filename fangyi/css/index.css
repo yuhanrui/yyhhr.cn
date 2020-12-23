@@ -1,0 +1,835 @@
+/*YuHanRui*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+/*侧边固定定位*/
+.right-fixed{
+	background: rgba(236,236,236,0.7);
+	height: 430px;
+	width: 40px;
+	position: fixed;
+	right: 0px;
+	top: 70px;
+	border-radius: 8px 0 0 8px;
+}
+.right-fixed div{
+	margin: 10px 5px 0 5px;
+	height: 60px;
+}
+.right-fixed div:last-child{
+	margin: 10px 5px 0 5px;
+	height: 60px;
+	cursor: pointer;
+}
+.right-fixed div:hover{
+	margin: 10px 0 0 0;
+}
+.right-fixed div img{
+	padding-top: 10px;
+	width: 30px;
+}
+.right-fixed div:hover img{
+	padding-top: 0;
+	width: 40px;
+}
+/*顶部*/
+.dingbu{
+	height: 50px;
+	line-height: 50px;
+	width: 1200px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 0 0 6px 6px;
+	margin: 0 auto;
+}
+.dingbu img{
+	height: 40px;
+	margin-top: 5px;
+	float: left;
+}
+.dingbu a div{
+	display: inline-block;
+	width: 80px;
+	height: 36px;
+	line-height: 36px;
+	background: rgba(180,220,248,0.6);
+	margin: 7px 0 0 50px;
+	float: left;
+	text-align: center;
+	border-radius: 16px 16px 16px 16px;
+	transition-duration: 0.3s;
+}
+.dingbu a{
+	color: #036eb7;
+	font: bold 16px "楷体";
+}
+.dingbu a div:hover{
+	height: 40px;
+	line-height: 40px;
+	margin: 5px 0 0 50px;
+	background: rgba(180,220,248,0.9);
+	border-radius: 6px 6px 6px 6px;
+	color: #fff;
+}
+.fkht,
+.dlzc{
+	display: inline-block;
+	float: right;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	margin: 5px 0 0 50px;
+}
+.dingbu .fkht a div{
+	display: inline-block;
+	margin: 2px 10px 0 0;
+	width: 60px;
+	height: 36px;
+	line-height: 36px;
+	color: rgb(124,124,124);
+	background: rgba(192,192,192,0.6);
+}
+.dingbu .dlzc a div{
+	width: 60px;
+	height: 36px;
+	line-height: 36px;
+	background: rgba(180,220,248,0.6);
+	text-align: center;
+	border-radius: 16px 16px 16px 16px;
+	transition-duration: 0.3s;
+	display: inline-block;
+	margin: 2px 10px 0 0;
+}
+.dingbu .dlzc a div:hover{
+	margin: 0 10px 0 0;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	background: rgba(180,220,248,0.9);
+	border-radius: 6px 6px 6px 6px;
+}
+.dingbu .dlzc a:hover{
+	color: #fff;
+}
+/*轮播图*/
+.lunbo{
+	width: 1200px;
+	height: 400px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 6px;
+	margin: 20px auto;
+}
+.leftfloat{
+	float: left;
+}
+.gif{
+	width: 100px;
+	margin: 23px 20px 0;
+}
+.lun{
+	width: 622px;
+	height: 350px;
+	float: left;
+	margin: 25px 0;
+	background: rgba(104,151,229,0.5);
+	border-radius: 6px;
+	overflow: hidden;
+	position: relative;
+}
+.lun div:first-child{
+	height: 350px;
+	width: 3732px;
+	position: absolute;
+	left: 0px;
+	animation: lunbotu 15s linear infinite;
+}
+.lun img{
+	width: 622px;
+	margin: 0;
+	display: block;
+	float: left;
+}
+@keyframes lunbotu{
+	0%{
+		left: 0px;
+	}
+	5%{
+		left: -622px;
+	}
+	20%{
+		left: -622px;
+	}
+	25%{
+		left: -1244px;
+	}
+	40%{
+		left: -1244px;
+	}
+	45%{
+		left: -1866px;
+	}
+	60%{
+		left: -1866px;
+	}
+	65%{
+		left: -2488px;
+	}
+	80%{
+		left: -2488px;
+	}
+	85%{
+		left: -3110px;
+	}
+	100%{
+		left: -3110px;
+	}
+}
+.lun div:nth-child(2){
+	width: 622px;
+	height: 350px;
+	line-height: 200px;
+	text-align: center;
+	border-radius: 6px;
+	position: absolute;
+	background: rgba(180,220,248,0.8) url(../images/shuju.png) no-repeat;
+	background-size: 300px;
+	background-position: left bottom;
+	display: none;
+}
+.lun div:nth-child(2) a{
+	color: #036eb7;
+	font-size: 30px;
+	transition: 0.3s;
+}
+.lun div:nth-child(2) a:hover{
+	color: #fff;
+	font-size: 34px;
+}
+.lun:hover div:nth-child(2){
+	display: block;
+}
+.ke{
+	width: 392px;
+	height: 374px;
+	margin: 10px 20px;
+	float: right;
+	border-radius: 6px 6px 6px 6px;
+}
+.ke div{
+	margin: 5px;
+	float: left;
+	width: 88px;
+	height: 85px;
+	line-height: 85px;
+	position: relative;
+}
+.ke div img{
+	width: 60px;
+	margin:13.5px 14px;
+	transition: 0.3s;
+}
+.ke div:hover img{
+	width: 88px;
+	margin:0;
+	opacity: 0.2;
+}
+.ke div div{
+	position: absolute;
+	width: 88px;
+	height: 85px;
+	line-height: 85px;
+	text-align: center;
+	left: 0px;
+	top: 0px;
+	color: rgba(191,152,250,0.1);
+	font-size: 20px;
+	font-weight: bold;
+	display: none;
+	transition: 0.5s;
+}
+.ke div:hover div{
+	display: inline;
+	color: rgba(112,27,241,0.9);
+}
+/*新闻热点*/
+.xinwen{
+	width: 1200px;
+	height: 730px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 6px;
+	margin: 0 auto 20px;
+}
+.xinwen a:hover{
+	color: #036eb7;
+}
+.topblock{
+	width: 1160px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	margin:10px 20px 20px;
+}
+.topblock img{
+	height: 30px;
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+.topblock h3{
+	display: block;
+	float: left;
+	margin-left: 5px;
+	letter-spacing: 1px;
+}
+.topblock h5{
+	display: block;
+	float: right;
+	margin-right: 8px;
+}
+.topblock hr{
+	width: 1160px;
+	height: 3px;
+	background: rgba(180,220,248,0.6);
+	border: 0px;
+	margin-bottom: 5px;
+}
+.topblock a{
+	color: #036eb7;
+}
+.leftxinwen{
+	width: 800px;
+	height: 650px;
+	margin:0 0 20px 20px;
+	float: left;
+	border-right: 2px solid rgba(180,220,248,0.6);
+}
+.leftxinwen > div{
+	width: 780px;
+	height: 100px;
+	margin-bottom: 10px;
+	padding-right: 5px;
+	background: rgba(236,236,236,0.5);
+	border-radius: 3px;
+	overflow: hidden;
+}
+.leftxinwen div div{
+	width: 178px;
+	height: 100px;
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+	position: relative;
+}
+.leftxinwen div div:hover img{
+	height: 150px;
+	left: -44.5px;
+	top: -25px;
+}
+.leftxinwen img{
+	height: 100px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	transition: 0.5s;
+}
+.leftxinwen h3{
+	height: 33px;
+	line-height: 33px;
+}
+.leftxinwen a{
+	color: #353c41;
+}
+.leftxinwen a:hover{
+	color: #036eb7;
+}
+.leftxinwen p{
+	text-indent: 2em;
+}
+.rightxinwen{
+	width: 340px;
+	height: 650px;
+	margin:0 20px 20px 0;
+	float: right;
+	background: rgba(236,236,236,0.5);
+	border-radius: 3px;
+}
+.rightxinwen > div{
+	width: 330px;
+	height: 204px;
+	margin: 5px 4px 11px 4px;
+	border: 1px solid #7ac1f3;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.rightxinwen div div{
+	height: 28px;
+}
+.rightxinwen h4{
+	height: 28px;
+	line-height: 28px;
+	padding-left: 5px;
+	float: left;
+}
+.rightxinwen h5{
+	height: 28px;
+	line-height: 28px;
+	float: right;
+	padding-right:5px;
+}
+.rightxinwen hr{
+	height: 1px;
+	background: #7ac1f3;
+	border: 0px;
+}
+.rightxinwen a{
+	color: #000;
+}
+.rightxinwen ul li{
+	list-style-position: inside;
+	white-space: nowrap;
+	margin: 10px 0 0 5px;
+	width: 325px;
+	height: 17px;
+	line-height: 17px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*防控指南*/
+.zhinan{
+	width: 1200px;
+	height: 1432px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 6px;
+	margin: 0 auto 20px;
+}
+.zhinan img{
+	float: left;
+	border-radius: 6px;
+}
+.imgw1100{
+	width: 1160px;
+	margin: 0 20px 19px;
+}
+.imgm20{
+	width: 374px;
+	margin: 0 0 19px 20px;
+}
+.imgm19{
+	width: 374px;
+	margin: 0 0 19px 19px;
+}
+/*防疫素材*/
+.sucai{
+	width: 1200px;
+	height: 2828px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 6px;
+	margin: 0 auto 20px;
+}
+.imgm2{
+	float: left;
+	border: 10px solid #fff;
+	border-radius: 6px;
+	width: 352px;
+	height: 235px;
+	margin: 0 0 22px 20px;
+	position: relative;
+}
+.imgm22{
+	float: left;
+	border: 10px solid #fff;
+	border-radius: 6px;
+	width: 352px;
+	height: 235px;
+	margin: 0 0 22px 22px;
+	position: relative;
+}
+.imgm2 img,
+.imgm22 img{
+	width: 300px;
+	position: absolute;
+	left: 26px;
+	top: 17.5px;
+	transition: 0.5s;
+}
+.imgm2:hover img,
+.imgm22:hover img{
+	width: 352px;
+	left: 0;
+	top: 0;
+}
+/*尾部*/
+.weibu{
+	width: 1200px;
+	height: 240px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 6px 6px 0 0;
+	margin: 0 auto;
+}
+.weibu div:first-child{
+	margin: 20px 0 20px 20px;
+	width: 650px;
+	height: 200px;
+	float: left;
+	border-radius: 3px;
+}
+.weibu dl{
+	width: 150px;
+	height: 180px;
+	margin: 15px 50px 20px 50px;
+	display: inline-block;
+	float: left;
+}
+.weibu dt{
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+}
+.weibu dd{
+	height: 38px;
+	line-height: 38px;
+}
+.weibu a{
+	color: #000;
+}
+.weibu a:hover{
+	font-size: 18px;
+	color: #036eb7;
+}
+.weibu img{
+	float: right;
+	height: 100px;
+	margin: 70px 100px;
+}
+/*登录注册页面*/
+.register{
+	width: 1200px;
+	height: 580px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 6px;
+	margin: 20px auto 0;
+}
+.register > div:first-child{
+	width: 1200px;
+	height: 130px;
+	line-height: 130px;
+	text-align: center;
+	font-size: 34px;
+	letter-spacing: 5px;
+	color: hsla(0,0%,100%,.9);
+	opacity:0.7;
+	border-radius: 6px 6px 0 0;
+	background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.register > div:nth-child(2){
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 18px;
+}
+.register > div:nth-child(2) span:last-child{
+	color: #fdb115;
+	cursor: pointer;
+}
+.maxform{
+	width: 350px;
+	height: 250px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+.minform1{
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	transition: 0.3s;
+	top: 30px;
+}
+.mailbox1{
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	left: 370px;
+	transition: 0.3s;
+	top: 30px;
+}
+.minform1 > div:first-child{
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+.minform1 img{
+	height: 12px;
+	float: left;
+	margin: 9px 0 0 4px;
+}
+.minform1 > div:last-child{
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	width: 250px;
+	position: relative;
+}
+.minform1 > div:last-child input{
+	height: 30px;
+	line-height: 30px;
+	width: 250px;
+	border: 0;
+	font-size: 16px;
+	outline: none;
+	background: transparent;
+	vertical-align: middle;
+}
+.region{
+	width: 348px;
+	height: 148px;
+	border: 1px solid rgba(0,0,0,.1);
+	overflow-y: auto;
+	background: #fff;
+	position: absolute;
+	font-size: 14px;
+	left: 0;
+	top: 28px;
+	z-index: 2;
+	display: none;
+}
+.region li{
+	list-style-type: none;
+	height: 30px;
+	line-height: 30px;
+}
+.region li:hover{
+	background: #fffee6;
+	color: #fdb115;
+}
+.region span:first-child{
+	margin-left: 10px;
+	float: left;
+}
+.region span:last-child{
+	margin-right: 10px;
+	float: right;
+}
+.minform1 > div:last-child div,
+.mailbox1 div div,
+.minform2 div div,
+.mailbox2 div div,
+.minform3 div div,
+.mailbox3 div div{
+	position: absolute;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	left: 0;
+	top: 0;
+	color: rgba(0,0,0,.3);
+	transition: 0.3s;
+}
+.maxform hr:nth-child(2){
+	height: 1px;
+	width: 350px;
+	border: 0;
+	margin: 3px 0 30px 0;
+	background: rgba(0,0,0,.1);
+	position: absolute;
+	top: 60px;
+}
+.maxform hr:nth-child(4){
+	height: 1px;
+	width: 350px;
+	border: 0;
+	margin: 3px 0 30px 0;
+	background: rgba(0,0,0,.1);
+	position: absolute;
+	top: 124px;
+}
+.maxform hr:nth-child(6){
+	height: 1px;
+	width: 350px;
+	border: 0;
+	margin: 3px 0 30px 0;
+	background: rgba(0,0,0,.1);
+	position: absolute;
+	top: 188px;
+}
+.minform2 {
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 94px;
+	transition: 0.3s;
+}
+.mailbox2 {
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 94px;
+	left: 370px;
+	transition: 0.3s;
+}
+.minform2 > div:first-child,
+.mailbox2 > div:first-child{
+	width: 326px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	position: relative;
+}
+.mailbox1 > div:first-child{
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	position: relative;
+}
+.minform2 > div:first-child input,
+.mailbox2 > div:first-child input{
+	width: 326px;
+	height: 30px;
+	line-height: 30px;
+	border: 0;
+	outline: none;
+	font-size: 16px;
+	background: transparent;
+	vertical-align: middle;
+}
+.mailbox1 > div:first-child input{
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	border: 0;
+	outline: none;
+	font-size: 16px;
+	background: transparent;
+	vertical-align: middle;
+}
+.minform2 img,
+.mailbox2 img{
+	float: right;
+	margin-top: 3px;
+	cursor: pointer;
+}
+.minform3{
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 158px;
+	transition: 0.3s;
+}
+.mailbox3{
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 158px;
+	left: 370px;
+	transition: 0.3s;
+}
+.minform3 > div:first-child,
+.mailbox3 > div:first-child{
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	position: relative;
+}
+.minform3 > div:first-child input,
+.mailbox3 > div:first-child input{
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+	border: 0;
+	outline: none;
+	font-size: 16px;
+	background: transparent;
+	vertical-align: middle;
+}
+.minform3 > div:last-child,
+.mailbox3 > div:last-child{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: right;
+	background: #d8d8d8;
+	font-size: 12px;
+	cursor: pointer;
+}
+.maxform > div:last-child{
+	font-size: 14px;
+	height: 18px;
+	line-height: 18px;
+	position: absolute;
+	top: 222px;
+}
+.maxform > div:last-child a{
+	color: #fdb115;
+}
+.maxform > div:last-child > div{
+	width: 18px;
+	height: 18px;
+	margin: 0 10px;
+	background: url(../images/quan.png);
+	background-size: 18px;
+	float: left;
+	cursor: pointer;
+}
+.maxform > div:last-child div div{
+	width: 10px;
+	height: 10px;
+	background: #fdb115;
+	border-radius: 50%;
+	margin: 4px;
+}
+.register > div:last-child{
+	width: 350px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 30px auto;
+	background: #ffcb05;
+	font-size: 16px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: 0.3s;
+	box-shadow: 0 2px 20px rgba(255,203,5,.6), 0 1px 30px rgba(255,203,5,.1);
+}
+.register > div:last-child:hover{
+	color: #fff;
+	font-size: 20px;
+	border-radius: 20px;
+}
+/*海报设计模板*/
+.haibao{
+	width: 1200px;
+	height: 3956px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 6px;
+	margin: 20px auto;
+}
+.haibao div img{
+	width: 280px;
+	border-radius: 3px;
+}
+.haibao div{
+	width: 280px;
+	height: 378px;
+	float: left;
+	margin: 16px 0 0 16px;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
